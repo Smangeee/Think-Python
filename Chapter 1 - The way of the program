@@ -1,0 +1,12 @@
+# If you run a 10 kilometer race in 43 minutes 30 seconds, what is your average time per mile? What is your average speed in miles per hour? (Hint: there are about 1.61 kilometers in a mile).
+
+# Convert km to miles.
+race_length = 10/1.61
+
+# Average time per mile?
+av_time = 43.5/race_length
+print(av_time)
+
+# Average speed in mph:
+av_speed = 60/av_time
+print(av_speed)
