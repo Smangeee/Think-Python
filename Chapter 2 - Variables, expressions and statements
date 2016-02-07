@@ -26,8 +26,23 @@ print(type(five))
 
 # Exercise 2.3
 
-# 1. The volume of a sphere with radius r is 4/3 π r3. What is the volume of a sphere with radius 5?
+# 1. The volume of a sphere with radius r is 4/3 π r**3. What is the volume of a sphere with radius 5?
+import math
+pi = math.pi
+r = 5
+v = 4/3*pi*r**3
+print(v)
 
 # 2. Suppose the cover price of a book is $24.95, but bookstores get a 40% discount. Shipping costs $3 for the first copy and 75 cents for each additional copy. What is the total wholesale cost for 60 copies?
+# ----> book = 24.95 - (24.95 * 0.4)  <----- why does this give "14.969999999999999" as an answer?
+book = 24.95
+discount = 9.98
+# ----> book = book - discount = 14.9699999999?? Why? <-----
+book = 14.97
+copies = 60
+book_cost = book * copies
+delivery = 3
+
+Figure out what's up before moving on with this.
 
 # 3. If I leave my house at 6:52 am and run 1 mile at an easy pace (8:15 per mile), then 3 miles at tempo (7:12 per mile) and 1 mile at easy pace again, what time do I get home for breakfast?
