@@ -10,3 +10,9 @@ print(av_time)
 # Average speed in mph:
 av_speed = 60/av_time
 print(av_speed)
+
+
+
+
+# More efficient code [from wikibooks]
+print round((10/1.61)/(43.5/60), 2)
