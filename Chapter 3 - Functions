@@ -75,8 +75,6 @@ print(row + '+')
 
 # Write a function that draws a similar grid with four rows and four columns.
 
-# This would work if it didn't return the "None"s.
-
 def do_twice(f,r,c):
     f(r,c)
     f(r,c)
@@ -89,8 +87,8 @@ def print_twice(row, column):
     print(column)
     
 def do_four(f,r,c):
-    print(do_twice(f,r,c))
-    print(do_twice(f,r,c))
+    do_twice(f,r,c)
+    do_twice(f,r,c)
 
-print(do_four(print_twice, '+----+----+', '|    |    |'))
+do_four(print_twice, '+----+----+', '|    |    |')
 print('+----+----+')
