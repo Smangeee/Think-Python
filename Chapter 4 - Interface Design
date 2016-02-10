@@ -6,26 +6,27 @@ print(bob)
 
 wait_for_user()
 
-# 1)
+# 1) Wrapping a piece of code up in a function is called encapsulation. One of the benefits of encapsulation is that it attaches a name to the code, which serves as a king of documentation. Another advantage is that if you re-use the code, it is more concise to call a function twice than to copy and paste the body!
 def square(t):
   for i in range(4):
     fd(t, 100)
     lt(t)
 square(bob)
 
-# 2)
-def square(t, l):
+# 2) Adding a parameter to a function is called generalization because it makes the function more general: in the previous version, the square is always the same size; in this version it can be any size.
+# I used 'def square(t, l):' before, but changed 'l' to 'length' as it is easier to read when more is going on.
+def square(t, length):
   for i in range(4):
-    fd(t, l)
+    fd(t, length)
     lt(t)
 square(bob, 75)
-# square(turtle image, length)
 
-# 3)
-def polygon(t, l, n):
-    for i in range(n):
-        fd(t, l)
-        lt(t, (360/n))
+# 3) Added the angle variable and made it a float (idea from answer key) to make it more efficient.
+def polygon(t, length, n):
+  angle = 360.0 / n
+  for i in range(n):
+      fd(t, length)
+      lt(t, angle)
 polygon(bob, 50, 6)
 # polygon(turtle image, length, sides of polygon)
 
