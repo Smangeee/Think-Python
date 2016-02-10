@@ -1,0 +1,37 @@
+from TurtleWorld import *
+
+world = TurtleWorld()
+bob = Turtle()
+print(bob)
+
+wait_for_user()
+
+# 1)
+def square(t):
+  for i in range(4):
+    fd(t, 100)
+    lt(t)
+square(bob)
+
+# 2)
+def square(t, l):
+  for i in range(4):
+    fd(t, l)
+    lt(t)
+square(bob, 75)
+# square(turtle image, length)
+
+# 3)
+def polygon(t, l, n):
+    for i in range(n):
+        fd(t, l)
+        lt(t, (360/n))
+polygon(bob, 50, 6)
+# polygon(turtle image, length, sides of polygon)
+
+# 4) This one continues to go around in circles and never stops. Needs to be edited.
+def circle(t, r):
+    fd(t, r)
+    lt(t, r)
+circle(bob, 20)
+# circle(turtle image, radius)
